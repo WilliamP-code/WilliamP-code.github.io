@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 40px;
+}
+
+#navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navLinks li {
+    display: inline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+}
+
+#searchInput {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+#gameDetails img {
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Game 1",
+        "link": "/games/game1.html"
+    },
+    {
+        "name": "Game 2",
+        "link": "/games/game2.html"
+    },
+    {
+        "name": "Game 3",
+        "link": "/games/game3.html"
+    }
+]
