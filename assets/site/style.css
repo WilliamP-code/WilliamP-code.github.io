@@ -1,15 +1,20 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #001f3d;  /* Navy Blue Background */
+    color: white;  /* White text */
 }
 
+/* Header and navigation bar */
 header {
-    background-color: #333;
+    background-color: #003366;  /* Darker Navy Blue */
     color: white;
     padding: 20px;
 }
 
+/* Navigation bar styling */
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,10 +36,16 @@ nav {
 }
 
 a {
-    color: white;
+    color: white;  /* White links */
     text-decoration: none;
+    font-weight: bold;
 }
 
+a:hover {
+    color: #cce7ff;  /* Light Blue on hover */
+}
+
+/* Form (search box) styling */
 form {
     display: flex;
 }
@@ -42,19 +53,41 @@ form {
 #searchInput {
     padding: 8px;
     font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+
+#searchInput:focus {
+    border: 2px solid #cce7ff;  /* Light Blue border when focused */
 }
 
 button {
     padding: 8px 16px;
     font-size: 16px;
+    background-color: #003366;  /* Same Dark Navy Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-section {
-    padding: 20px;
+button:hover {
+    background-color: #004b8d;  /* Lighter navy blue on hover */
 }
 
-ul {
+/* Featured games section */
+#featured {
+    padding: 20px;
+    background-color: #00294d;  /* Lighter Navy Blue for background */
+}
+
+#featured h2 {
+    color: #cce7ff;  /* Light Blue for headings */
+}
+
+#gameList {
     list-style-type: none;
     padding: 0;
 }
@@ -63,8 +96,35 @@ li {
     margin: 10px 0;
 }
 
+#gameList a {
+    color: white;
+    text-decoration: none;
+}
+
+#gameList a:hover {
+    color: #cce7ff;  /* Light Blue on hover */
+}
+
+/* Game details section */
+#gameDetails {
+    padding: 20px;
+    background-color: #00294d;  /* Lighter Navy Blue background */
+}
+
 #gameDetails img {
     max-width: 200px;
     display: block;
     margin: 10px auto;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    #navLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
 }
